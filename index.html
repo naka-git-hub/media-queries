@@ -4,28 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Section contenant les cartes responsives -->
-    <section>
-        <div class="divTitleH2">
-            <h2>Cartes responsives</h2>
+    <!-- Classe boxContainer permettant de construire le header -->
+    <header class="boxContainer">
+        <div>
+            <h1>Mon Site Moderne</h1>
         </div>
-        <!-- Blocs div permettant d'utiliser flex à propos des cartes. Il s'agit de la classe CSS boxContainerResponsiveCards -->
-        <div class="boxContainerResponsiveCards">
-            <div class="divCards">
-                <span>Carte 1</span>
+        <nav>
+            <!-- Div contenant la bar de navigation de burger -->
+            <div id="menu">
+                <input type="checkbox" id="burger">
+                <div id="menu_links">
+                    <div id="menu_link"><a href="#">Accueil</a></div>
+                    <div id="menu_link"><a href="#">A propos</a></div>
+                    <div id="menu_link"><a href="#">Contact</a></div>
+                </div>
             </div>
-            <div class="divCards">
-                <span>Carte 2</span>
-            </div>
-            <div class="divCards">
-                <span>Carte 3</span>
-            </div>
-            <div class="divCards">
-                <span>Carte 4</span>
-            </div>
-        </div>
+        </nav>
+    </header>
+
+    <section class="sectionWelcome">
+        <span>Image exemple</span>
+        <h2>Bienvenue !</h2>
+        <p>Voici un exemple de site responsive simple à reproduire. Il utilise une seule media query pour s'adapter aux écrans mobiles.</p>
     </section>
+
+    <section class="sectionService">
+        <h2>Nos services</h2>
+        <article class="articleServices">
+            <h3>Service 1</h3>
+            <p>Un service simple et efficace pour bien démarrer.</p>
+        </article>
+    </section>
+
+    <section class="sectionService">
+        <article class="articleServices">
+            <h3>Service 2</h3>
+            <p>Une solution adaptée à vos besoins quotidiens.</p>
+        </article>
+    </section>
+
+    <section class="sectionService">
+        <article class="articleServices">
+            <h3>Service 3</h3>
+            <p>Un accompagnement personnalisé pour aller plus loin.</p>
+        </article>
+    </section>
+
+    <footer>
+        <div class="divFooter">
+            <p>&copy; 2025 Mon Site Moderne</p>
+        </div>
+    </footer>
+
 </body>
 </html>
