@@ -9,30 +9,81 @@ body {
 
 header {
     width: 100%;
-    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: rgb(0, 0, 0);
 }
 
-.boxContainer {
+/* .boxContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 h1 {
     color: rgb(255, 255, 255);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media screen and (min-width: 900) {
+    #menu_links {
+    display: none;
+  }
+
+  .boxContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu{
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  margin: 15px auto;
+  border: 1px solid black;
+}
+
+#menu a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 1em;
+}
+
+#menu #menu_link:hover a{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sectionService {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+}
+
+
+/*#menu_links{
+  display: none;
+}*/
+
+@media only screen and (max-width: 900) {
+    #menu_links{
+  display: none;
+  }
+
+  #burger:checked ~ #menu_links{
+  display: none;
+}
+
 #burger{
   vertical-align: middle;
 }
 
-#menu_links{
-  display: none;
 }
 
-#menu{
+/* #menu{
   background-color: darkcyan;
   width: 200px;
   margin: 15px auto;
@@ -48,15 +99,13 @@ h1 {
 
 #menu #menu_link:hover a{
   background-color: rgba(0, 0, 0, 0.2);
-}
+} */
 
-#menu_bars{
+/* #menu_bars{
   text-align: right;
-}
+} */
 
-#burger:checked ~ #menu_links{
-  display: block;
-}
+
 
 .sectionWelcome {
     margin-top: 40px;
@@ -84,6 +133,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .articleServices > p {
@@ -92,8 +142,10 @@ h1 {
 
 
 footer {
+   margin-top: 50px;
    width: 100%;
-   height: 150px;
+   padding-top: 50px;
+   padding-bottom: 50px;
    background-color: rgb(0, 0, 0);
    display: flex;
    justify-content: center;
